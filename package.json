@@ -1,0 +1,34 @@
+{
+  "name": "typescriptwebpacktemplate",
+  "version": "1.0.0",
+  "description": "working typescript/webpack 3 template with minify and hot reload previews",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "webpack --mode production --config webpack.dist.config.js --progress --colors",
+    "build": "webpack --mode development --config webpack.dist.config.js --progress --colors",
+    "serve": "webpack-dev-server --mode development --config webpack.dev.config.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://care-applications.visualstudio.com/Fridayafternoon/_git/TypescriptWebpackTemplate"
+  },
+  "author": "Igor Raffaele",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.3.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack-cli": "^2.0.10",
+    "webpack": "^4.0.1",
+    "webpack-dev-server": "^3.1.0",
+    "webpack-merge": "^4.1.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^3.0.4",
+    "ts-loader": "^4.0.0",
+    "tslint": "^5.9.1",
+    "tslint-loader": "^3.5.3"
+  }
+}
